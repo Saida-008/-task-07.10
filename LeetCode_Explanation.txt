@@ -1,0 +1,50 @@
+LeetCode Problems 88–96
+Solutions Explanation
+
+88. Merge Sorted Array
+I used three pointers to merge two sorted arrays. I started from the end of both arrays and compared the elements. The larger element was placed at the end of nums1. This method works without using extra memory.
+Time Complexity: O(m + n)
+Space Complexity: O(1)
+
+89. Gray Code
+I used a mathematical formula to generate Gray codes. For each number, I applied the XOR operation with the number shifted one bit to the right. This creates a sequence where neighboring numbers differ by only one bit.
+Time Complexity: O(2^n)
+Space Complexity: O(2^n)
+
+90. Subsets II
+I used backtracking to generate all possible subsets. First, I sorted the array. Then I skipped duplicate numbers at the same recursion level to avoid repeated subsets.
+Time Complexity: O(n * 2^n)
+Space Complexity: O(n), excluding the result
+
+91. Decode Ways
+I used dynamic programming to count the possible ways to decode a string. I checked whether one digit or two digits could represent a valid letter. The results were stored in a DP array.
+Time Complexity: O(n)
+Space Complexity: O(n)
+
+92. Reverse Linked List II
+I used pointers to reverse a specific part of a linked list. First, I found the position before the part that needed reversing. Then I changed the links between nodes without creating another list.
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+93. Restore IP Addresses
+I used backtracking to find all valid IP addresses. I divided the string into four parts. Each part must be between 0 and 255 and cannot contain unnecessary leading zeros.
+Time Complexity: O(1), because the input length is limited
+Space Complexity: O(1), excluding the result
+
+94. Binary Tree Inorder Traversal
+I used recursion to visit the nodes of a binary tree. First, I visited the left subtree, then the root node, and finally the right subtree. I stored the values in a vector.
+Time Complexity: O(n)
+Space Complexity: O(h), where h is the tree height
+
+95. Unique Binary Search Trees II
+I used recursion to generate all possible binary search trees. Each number was selected as a root. Then I generated all possible left and right subtrees and combined them.
+Time Complexity: Depends on the number of generated trees (Catalan numbers)
+Space Complexity: Depends on the generated trees
+
+96. Unique Binary Search Trees
+I used dynamic programming to calculate the number of unique binary search trees. For every possible root, I multiplied the number of left subtrees by the number of right subtrees and added the results.
+Time Complexity: O(n^2)
+Space Complexity: O(n)
+
+Conclusion
+In these tasks, I practiced different algorithms such as two pointers, backtracking, recursion, dynamic programming, and tree traversal. These problems helped me understand how to solve algorithmic tasks and improve code efficiency.
